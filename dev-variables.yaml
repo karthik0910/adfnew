@@ -1,0 +1,4 @@
+variables:
+  resourcegroup: adf-practice
+  adfname: adf-dem-pract
+  resourcegroupid: 7854fb6b-7981-4b27-a391-bcda53b3acac
