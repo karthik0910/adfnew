@@ -1,8 +1,0 @@
-variables:
-  adfuatname: adf-dem-uat
-  myserviceconnection: adf-service-connection
-  subscriptionid: 7854fb6b-7981-4b27-a391-bcda53b3acac
-  rguatname: adf-prac-uat
-  UATlocation: East US
-  UATsecretname: keyuat
-  UATkeyurl: https://adf-key-vault-uat.vault.azure.net/
