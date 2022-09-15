@@ -69,7 +69,7 @@ stages:
         environment: UAT
         strategy:
           runOnce:
-            preDeploy:
+            deploy:
               steps:
                 - task: DownloadPipelineArtifact@2
                   inputs:
@@ -91,11 +91,6 @@ stages:
                     csmParametersFile: '$(Pipeline.Workspace)/ArmTemplates/ARMTemplateParametersForFactory.json'
                     overrideParameters: '-factoryName ${{ variables.adfuatname }} -AzureBlobStorage1_properties_typeProperties_connectionString_secretName ${{ variables.UATsecretname }} -AzureKeyVaultdemoservice_properties_typeProperties_baseUrl ${{ variables.UATkeyurl }}'
                     deploymentMode: Incremental
-
-
-                    
-            
-            
 
 
     
