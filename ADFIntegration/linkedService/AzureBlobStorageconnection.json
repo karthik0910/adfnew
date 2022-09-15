@@ -1,0 +1,17 @@
+{
+	"name": "AzureBlobStorageconnection",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaultcode",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "stracount"
+			}
+		}
+	}
+}
